@@ -1,0 +1,27 @@
+.footerContainer {
+  background-image: url("../assets/footer.png");
+}
+
+.footerInfoContainer {
+  display: flex;
+  justify-content: end;
+  gap: 350px;
+  padding: 0 100px;
+}
+.footerSubInfoContainer h1 {
+  color: #eb6d27;
+}
+
+.footerSubInfoContainer p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footerContainer h4 {
+  text-align: center;
+  color: #757474;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 0;
+}

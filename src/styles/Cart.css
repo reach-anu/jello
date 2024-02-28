@@ -1,0 +1,60 @@
+.cartPageContainer {
+  min-height: 100vh;
+  padding: 0 20px;
+}
+.cartCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-gap: 10px;
+  place-items: center;
+}
+
+.cartContainer {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+  align-items: center;
+  border: solid 1px rgba(0, 0, 0, 0.116);
+  grid-gap: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  min-width: 300px;
+  position: relative;
+  max-width: 400px;
+}
+
+.cartContainer img {
+  height: 124px;
+  width: 187px;
+}
+.cartInfo {
+  width: 250px;
+}
+.cartInfo p {
+  margin: 0;
+}
+.cartItemcount {
+  display: flex;
+  gap: 10px;
+}
+
+.cartItemcount p {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: solid 1px rgba(0, 0, 0, 0.116);
+  cursor: pointer;
+}
+
+.removeButton {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border-radius: 50%;
+  border: 0;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #eb6d27;
+  cursor: pointer;
+}

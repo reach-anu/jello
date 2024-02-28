@@ -1,0 +1,7 @@
+.productPageContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-gap: 10px;
+}

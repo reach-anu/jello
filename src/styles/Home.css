@@ -1,0 +1,148 @@
+/* Featured Product Section */
+
+.featureContainer {
+  min-height: 100vh;
+  padding: 20px;
+}
+.featureInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featureCategory {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+.featureCategory {
+  display: flex;
+  gap: 25px;
+}
+.categoryButton {
+  background-color: #75747423;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  color: #757474;
+  cursor: pointer;
+  font-weight: 600;
+}
+.categoryButton.active {
+  background-color: #eb6d27;
+  color: white;
+}
+
+.featuredProductContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-gap: 10px;
+  margin: 30px 0px;
+}
+
+@media (max-width: 550px) {
+  .featureInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .featureCategory {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Explore Section */
+
+.exploreContainer {
+  display: flex;
+  gap: 40px;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+.exploreImageSection {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 50px;
+  gap: 20px;
+}
+.exploreContainer img {
+  width: 100%;
+  height: 500px;
+}
+.exploreIconsWrapper {
+  display: flex;
+  gap: 50px;
+  font-size: 60px;
+  color: #eb6d27;
+  justify-content: space-between;
+  align-items: center;
+}
+.exploreIcons {
+  display: flex;
+  gap: 30px;
+}
+.exploreIconsWrapper p {
+  margin: 10px;
+}
+.exploreTextContainer {
+  width: 30%;
+  min-width: 400px;
+}
+.exploreTextContainer p {
+  font-weight: 600;
+  opacity: 0.5;
+  width: 300px;
+  line-height: 1.5;
+}
+.exploreImage {
+  display: flex;
+  position: absolute;
+  right: 15%;
+  bottom: 180px;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.exploreImage img {
+  width: 250px;
+  height: 300px;
+}
+
+@media (max-width: 1180px) {
+  .exploreImageSection {
+    width: 50%;
+  }
+  .exploreContainer img {
+    width: 400px;
+    height: 500px;
+  }
+  .exploreImage {
+    display: none;
+  }
+  .exploreTextContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 860px) {
+  .exploreContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .exploreImageSection {
+    width: 50%;
+  }
+  .exploreContainer img {
+    width: 100%;
+    height: auto;
+  }
+  .exploreTextContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .exploreIconsWrapper {
+    display: none;
+  }
+}
